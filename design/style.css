@@ -1,11 +1,7 @@
-/* FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+/* 
+Main color: #2D6A4F
+Grey color: #343a40
 
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-LINE HEIGH
-title : 0 - 1.5 &&& text: 1.5 - 2
 */
 
 * {
@@ -17,7 +13,12 @@ title : 0 - 1.5 &&& text: 1.5 - 2
 /* GENERAL SYSTEM */
 
 body {
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  color: #343a40;
+  border-top: #2d6a4f solid 8px;
+
+  border-bottom: #2d6a4f solid 8px;
 }
 
 .container {
@@ -54,6 +55,32 @@ img {
   width: 100%;
 }
 
+.btn:link,
+.btn:visited {
+  background-color: #2d6a4f;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #40916c;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
 /* COMPLEMENT STYLE */
 
 /* header */
@@ -63,7 +90,7 @@ h1 {
   line-height: 1.1;
 }
 
-.header-text{
+.header-text {
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 1.7;
@@ -82,21 +109,27 @@ h1 {
 }
 
 /* TESTIMONIAL */
+.testimonial-section {
+  background-color: #2d6a4f;
+  color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+}
 
 .testimonial-box {
-  grid-column: 2 / 4;
+  grid-column: 2 / -1;
+  align-self: center;
 }
 
 .testimonial-box h2 {
   font-size: 24px;
-  margin-bottom: 48px;
-  letter-spacing: -0.6px;
+  margin-bottom: 24px;
 }
 
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -116,7 +149,7 @@ h3 {
   font-size: 18px;
 }
 
-.chair-details li{
+.chair-details li {
   display: flex;
   gap: 12px;
   margin-bottom: 24px;
@@ -129,13 +162,13 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 20px;
 }
 
 ul {
   margin-bottom: 24px;
 }
-
 
 footer {
   margin-bottom: 48px;
