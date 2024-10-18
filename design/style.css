@@ -81,6 +81,13 @@ img {
   padding: 8px 12px;
 }
 
+.features-icon {
+  stroke: #2d6a4f;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
 /* COMPLEMENT STYLE */
 
 /* header */
@@ -113,7 +120,7 @@ h1 {
   background-color: #2d6a4f;
   color: #fff;
   padding: 24px;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .testimonial-box {
@@ -134,6 +141,11 @@ h1 {
 }
 
 /* CHAIRS */
+
+.chair {
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
 
 .chair-box {
   padding: 20px;
@@ -164,6 +176,12 @@ h3 {
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
+}
+
+.chair-icon {
+  stroke:#2d6a4f;
+  width: 24px;
+  height: 24px;
 }
 
 ul {
