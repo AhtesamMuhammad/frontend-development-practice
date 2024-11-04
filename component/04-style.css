@@ -1,4 +1,4 @@
-#0f766e * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: 0;
@@ -42,8 +42,6 @@ body {
   background-color: #0f766e;
   transition: background-color 0.3s, color 0.3s;
 }
-
-
 
 .dots {
   width: 18px;
