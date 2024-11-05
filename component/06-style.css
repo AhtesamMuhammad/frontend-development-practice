@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #343a40;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+}
+
+nav, section, main, aside {
+  padding-top: 24px;
+}
+
+nav {
+  background-color: #343a40;
+  color: #f7f7f7;
+  grid-row: 1/-1;
+}
+
+menu {
+  background-color: #7c3aed;
+  color: #f7f7f7;
+  grid-column: 2/-1;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+button {
+  display: inline-block;
+  font-size: 16px;
+  color: #f7f7f7;
+  font-weight: bold;
+  background-color: #5b21b6;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:last-child {
+  background-color: #e11d48;
+  margin-left: auto;
+}
+
+section {
+  background-color: #d1d5db;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 48px;
+
+  /* How element that dont fit into container appear */
+  overflow: scroll;
+}
+
+.email {
+  background-color: #9ca3af;
+  /* padding: 34px 20px; */
+  flex-shrink: 0;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #d1d5db;
+}
