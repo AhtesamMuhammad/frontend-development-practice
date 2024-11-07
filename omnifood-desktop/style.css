@@ -41,8 +41,8 @@ exemple: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS
 
-exemple: Default: 9px
-exemple: Medium: 11px
+Default: 9px
+Medium: 11px
 
 ///////////////////////////////////////
 
@@ -140,17 +140,49 @@ body {
   align-items: center;
 
   background-color: #fdf2e9;
-  height: 9.6rem;  
+  height: 9.6rem;
   padding: 0 4.8rem;
 }
 
+/***************************/
+/* NAVIGATION */
+/***************************/
+
 .logo {
   height: 2.2rem;
-
 }
 
-.main-nav {
+.main-nav-list {
+  list-style: none;
+  font-size: 1.8rem;
 
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  transition: all 0.3s;
+}
+
+.nav-cta:link,
+.nav-cta:visited {
+  background-color: #e67e22;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+}
+
+.nav-cta:hover,
+.nav-cta:active {
+  background-color: #cf711f;
 }
 
 /***************************/
