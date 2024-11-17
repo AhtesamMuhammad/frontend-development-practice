@@ -25,7 +25,7 @@ Default: 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 --- 02 COLORS
 
-- Primary: #e67e22
+- Primary: #f97316
 - Tints: #fdf2e9
 - Shades: 
 - Accents:
@@ -145,33 +145,37 @@ body {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #cf711f;
+  color: #e06814;
   text-transform: uppercase;
   margin-bottom: 1.6rem;
   letter-spacing: 2px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
+  font-weight: 600;
   text-decoration: none;
   display: inline-block;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+  border: none;
+  cursor: pointer;
 
   transition: all 0.3s;
 }
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
+  background-color: #f97316;
   color: #fff;
   font-weight: bold;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #cf711f;
+  background-color: #e06814;
   color: #fff;
 }
 
@@ -190,9 +194,21 @@ body {
   box-shadow: 0 0 0 3px #fff;
 }
 
+.btn--form {
+  background-color: #4b2207;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .link:link, .link:visited {
   display: inline-block;
-  color: #e67e22;
+  color: #f97316;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
@@ -200,7 +216,7 @@ body {
 }
 
 .link:hover, .link:active {
-  color: #cf711f;
+  color: #e06814;
   border-bottom: 1px solid transparent;
 }
 
@@ -221,7 +237,15 @@ body {
 .list-icon {
   width: 3rem;
   height: 3rem;
-  color: #e67e22;
+  color: #f97316;
+}
+
+/* link, buttons... */
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #fa812d;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.6rem rgba(250, 130, 45, 0.4);
 }
 
 /* HELPER/SETTING CLASSES */
