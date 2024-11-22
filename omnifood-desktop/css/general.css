@@ -64,6 +64,7 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -71,6 +72,10 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* Only works if there is nothing absolutly 
+  positioned in relation to body */
+  overflow-x: hidden;
 }
 
 /***************************/
@@ -209,7 +214,8 @@ body {
   color: #555;
 }
 
-.link:link, .link:visited {
+.link:link,
+.link:visited {
   display: inline-block;
   color: #f97316;
   text-decoration: none;
@@ -218,7 +224,8 @@ body {
   transition: all 0.3s;
 }
 
-.link:hover, .link:active {
+.link:hover,
+.link:active {
   color: #e06814;
   border-bottom: 1px solid transparent;
 }
@@ -236,6 +243,7 @@ body {
   align-items: center;
   gap: 1.6rem;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 
 .list-icon {
@@ -268,4 +276,3 @@ body {
 strong {
   font-weight: 500;
 }
-

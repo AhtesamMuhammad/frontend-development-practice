@@ -10,6 +10,7 @@
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 /***************************/
@@ -34,7 +35,7 @@
   display: inline-block;
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.8rem;
 
   transition: all 0.3s;
@@ -51,6 +52,26 @@
 .nav-cta:hover,
 .nav-cta:active {
   background-color: #e06814;
+}
+
+.btn-mobile-nav {
+  border: 0;
+  background-color: 0;
+  cursor: pointer;
+  background: none;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /***************************/
@@ -383,13 +404,13 @@
   content: "Best value";
   position: absolute;
   top: 7%;
-  right: -10%;
+  right: -15%;
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
   color: #333;
   background-color: #facc15;
-  padding: 0.8rem 5.2rem;
+  padding: 0.8rem 7.2rem;
   transform: rotate(45deg);
 }
 
@@ -537,6 +558,7 @@
     ),
     url(../img/eating.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 /***************************/
