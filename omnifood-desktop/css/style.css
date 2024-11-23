@@ -550,7 +550,7 @@
   box-shadow: 0 0 0 0.6rem rgba(253, 242, 233, 0.262);
 }
 
-.cta-image-box {
+.cta-img-box {
   background-image: linear-gradient(
       to right bottom,
       rgba(250, 144, 69, 0.306),
